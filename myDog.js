@@ -42,11 +42,12 @@ var averageAge = {
   dogAge: 0,
   dogCount: 0,
   value: function () {
-    if (dogCount == 0) {
-      return 0;
+    if (this.dogCount == 0) {
+      age = 0;
     } else {
-      return this.dogAge / this.dogCount;
+      age = this.dogAge / this.dogCount;
     }
+    return age;
   }
 }
 
